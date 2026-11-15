@@ -1,6 +1,7 @@
 .footer {
   color: #f4f4fd;
   background: #2e2f42;
+  padding: 100px 0;
 }
 
 .footer-logo {
@@ -24,10 +25,6 @@
   max-width: 264px;
 }
 
-.footer {
-  padding: 100px 0;
-}
-
 .footer-cont {
   display: flex;
 }
@@ -36,12 +33,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background: #31d0aa; */
   width: 40px;
   height: 40px;
   background: #4d5ae5;
   border-radius: 50%;
-  gap: 16px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -85,40 +80,49 @@
   height: 40px;
   padding-left: 16px;
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #ffffff;
   border-radius: 4px;
   border: 1px solid #ffffff;
   background: transparent;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* [placeholder] {
-  color: #ffffff;
-} */
+.subs-email-text::placeholder {
+  color: #fff;
+}
+
+.subs-email-text:focus {
+  border-color: #31d0aa;
+  outline: none;
+}
 
 .subs-button {
   color: #ffffff;
   background-color: #4d5ae5;
-  min-width: 169px;
-  height: 56px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  min-width: 165px;
+  height: 40px;
+  padding: 8px 24px;
   cursor: pointer;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 4px;
   border: none;
   text-transform: capitalize;
   box-shadow: 0px 4px 4px 0px #00000026;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background: #4d5ae5;
-  min-width: 165px;
-  height: 40px;
-  padding: 8px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+.subs-button:hover,
+.subs-button:focus {
+  background-color: #31d0aa;
 }
 
 .subs-icon {
