@@ -440,28 +440,28 @@
           <p class="social-text">Social media</p>
           <ul class="footer-list">
             <li>
-              <a class="footer-icon" href="">
+              <a class="footer-icon" href="#">
                 <svg width="24" height="24">
                   <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="footer-icon" href="">
+              <a class="footer-icon" href="#">
                 <svg width="24" height="24">
                   <use href="./images/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="footer-icon" href="">
+              <a class="footer-icon" href="#">
                 <svg width="24" height="24">
                   <use href="./images/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="footer-icon" href="">
+              <a class="footer-icon" href="#">
                 <svg width="24" height="24">
                   <use href="./images/icons.svg#linkedin"></use>
                 </svg>
@@ -472,6 +472,7 @@
 
         <div class="subs-container">
           <p class="subs-title">Subscribe</p>
+
           <form class="subs-form">
             <label class="subs-label" for="email">
               <input
@@ -480,6 +481,7 @@
                 name="email"
                 id="email"
                 placeholder="E-mail"
+                required
               />
             </label>
 
@@ -494,22 +496,22 @@
       </div>
     </footer>
 
+    <!-- Modal Window -->
+
     <div class="backdrop" id="modal">
       <div class="modal-window">
-        <!-- Close Button -->
         <button type="button" class="modal-close-button">
           <svg class="modal-close-button-icon" width="8" height="8">
             <use href="./images/icons.svg#close-window"></use>
           </svg>
         </button>
 
-        <!-- Form Area -->
         <p class="modal-window-title">
           Leave your contacts and we will call you back
         </p>
 
         <form class="modal-form">
-          <div class="modal-form-group" id="modal-form-name">
+          <div class="modal-form-group">
             <label class="modal-form-label" for="user-name">Name</label>
             <div class="modal-form-input-group">
               <input
@@ -524,7 +526,7 @@
             </div>
           </div>
 
-          <div class="modal-form-group" id="modal-form-tel">
+          <div class="modal-form-group">
             <label class="modal-form-label" for="tel">Phone</label>
             <div class="modal-form-input-group">
               <input class="modal-form-input" type="tel" name="tel" id="tel" />
@@ -534,7 +536,7 @@
             </div>
           </div>
 
-          <div class="modal-form-group" id="modal-form-mail">
+          <div class="modal-form-group">
             <label class="modal-form-label" for="mail">Email</label>
             <div class="modal-form-input-group">
               <input
@@ -567,10 +569,17 @@
               id="user-privacy"
               value="true"
             />
+
             <label for="user-privacy" class="modal-form-privacy-text">
+              <span class="modal-form-checkbox-design">
+                <svg width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+
               <span>
                 I accept the terms and conditions of the
-                <a class="modal-form-privacy-link" href="">Privacy Policy</a>
+                <a class="modal-form-privacy-link" href="#">Privacy Policy</a>
               </span>
             </label>
           </div>
